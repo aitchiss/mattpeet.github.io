@@ -13,9 +13,8 @@ const SlideImage = (props) => {
   }
 
   return (
-
     <Carousel.Item className={active}>
-      <img src={props.image} width={900} height={500} alt="900x500" />
+      <img src={props.image} width={900} height={500} alt={props.altText} />
     </Carousel.Item>
   )
 }

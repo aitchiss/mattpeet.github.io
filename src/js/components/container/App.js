@@ -32,8 +32,13 @@ class App extends Component {
     return (
       <div className="app-container">
         <Header />
-        <Navigation menuOpen={this.state.menuOpen} openMenuCommand={this.toggleMenu} />
-        <Main menuOpen={this.state.menuOpen} toggleMenu={this.toggleMenu} />
+        <Navigation
+          menuOpen={this.state.menuOpen}
+          openMenuCommand={this.toggleMenu}
+        />
+        <main>
+          <Main menuOpen={this.state.menuOpen} toggleMenu={this.toggleMenu} />
+        </main>
       </div>
     );
   }
